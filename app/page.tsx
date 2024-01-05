@@ -85,8 +85,8 @@ export default function Home() {
               </h2>
               <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Junior Full Stack Developer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-10xl mx-auto'>
-               I'm detailed-orientated and passionate recent graduate from the ALX program. I'm eager to contribute to
-               innovative software solutions as a Junior developer. I'm a quick learner with strong foundation in programming
+               I&apos;m detailed-orientated and passionate recent graduate from the ALX program. I&apos;m eager to contribute to
+               innovative software solutions as a Junior developer. I&apos;m a quick learner with strong foundation in programming
                languages and software development methodologies, seeking an opportunity to grow and excel in a dynamic enviroment.
               </p>
               
