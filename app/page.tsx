@@ -83,7 +83,7 @@ export default function Home() {
                 }} 
               />
               </h2>
-              <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Junior Full Stack Developer</h3>
+              <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-10xl mx-auto'>
                I&apos;m detailed-orientated and passionate recent graduate from the ALX program. I&apos;m eager to contribute to
                innovative software solutions as a Junior developer. I&apos;m a quick learner with strong foundation in programming
@@ -106,13 +106,13 @@ export default function Home() {
             <h1 className='text-5xl text-end text-black dark:text-gray-200'>My <span className='text-rose-700'>Skills</span></h1>
           </div>
           <div className='text-center p-10 rounded-sm my-10'>
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Language</h2>
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
             <div className='flex flex-wrap justify-evenly'>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-40 h-40 text-sky-700 '/>Python</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-40 h-40 text-yellow-400 '/>JavaScript</div>
               <div className='p-2 text-xl dark:text-gray-200'><SiCsharp className='w-40 h-40 text-purple-900 '/>C #</div>
             </div>
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Back-end Technologies <span className='text-rose-700'>and Frameworks</span></h2>
+            <h2 className='text-3xl p-7 dark:text-gray-200'>BackEnd Technologies <span className='text-rose-700'>and Frameworks</span></h2>
             <div className='flex flex-wrap justify-evenly'>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-40 h-40 text-green-900 md:w-40 lg:w-48 lg:h-48'/>Node JS</div>
               <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-40 h-40 text-green-900 md:w-40 lg:w-48 lg:h-48'/>Express JS</div>
@@ -126,15 +126,15 @@ export default function Home() {
               <div className='p-2 text-xl dark:text-gray-200'><SiMysql className="w-40 h-40 text-amber-500 md:w-40 lg:w-48 lg:h-48" />MySQL</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoPostgresql className="w-40 h-40 text-blue-950 md:w-40 lg:w-48 lg:h-48" />PostgresQL</div>
             </div>
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Front-end Technologies <span className='text-rose-700'>and Frameworks</span></h2>
+            <h2 className='text-3xl p-7 dark:text-gray-200'>FrontEnd Technologies <span className='text-rose-700'>and Frameworks</span></h2>
             <div className='flex flex-wrap justify-evenly'>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoHtml5 className='w-40 h-40 text-orange-700 md:w-40 lg:w-48 lg:h-48' />HTML</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-40 h-40 text-blue-700 md:w-40 lg:w-48 lg:h-48' />CSS</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-40 h-40 text-sky-400 md:w-40 lg:w-48 lg:h-48' />React</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoTailwindCss className='w-40 h-40 text-cyan-500 md:w-40 lg:w-48 lg:h-48' />TailWindCss</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoBootstrap className='w-40 h-40 text-purple-700 md:w-40 lg:w-48 lg:h-48' />TailWindCss</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoBootstrap className='w-40 h-40 text-purple-700 md:w-40 lg:w-48 lg:h-48' />Bootstrap</div>
             </div>
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Other <span className='text-rose-700'>Technolgies</span></h2>
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Other <span className='text-rose-700'>Technologies</span></h2>
             <div className='flex flex-wrap justify-evenly'>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoGit className="w-40 h-40 text-amber-600 md:w-40 lg:w-48 lg:h-48"/>Git</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoGithub className="w-40 h-40 text-gray-200 md:w-40 lg:w-48 lg:h-48"/>Github</div>
@@ -151,13 +151,13 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               My portfolio is a collection of different work samples that reflect my craft and experience in <span className='text-rose-700'>
               Full Stack Development</span>. My portfolio includes a variety of different work, such as <span className='text-rose-700'>Flask-Fyaar-project, 
-              Trivia-API, Flask_toDo_app, A_simple_flask_API, API_Node.js and BeyondBlog_NodeJS</span> each domenstrating my
+              Trivia-API, Flask_toDo_app, A_simple_flask_API, API_Node.js and BeyondBlog_NodeJS</span> each demonstrating my
               creativity, problem-solving abilities, and professional growth over the years.
               </p>
               <p>Through my portfolio, I aim to showcase the quality of my work and provide potential employers with
-                a comprehensive understanding of my what I am capable of. It not only highlights my past achievments but also
-                offers insights into my thought process, approuch to projects and overall professional development. By exploring my portfolio,
-                you will be able to get a deeper understand of my skills and be able to asses my suitability for your specific need.
+                a comprehensive understanding of what I am capable of. It not only highlights my past achievements but, also
+                offers insights into my thought process, approach to projects and overall professional development. By exploring my portfolio,
+                you will be able to get a deeper understanding of my skills and be able to assess my suitability for your specific needs.
               </p>
           </div>
 
