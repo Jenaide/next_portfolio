@@ -91,10 +91,10 @@ export default function Home() {
               </p>
               
               <div className='text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:gap-10'>
-                <a href="https://www.linkedin.com/in/jenaide-sibolie-57a340158/" className='hover:text-rose-500'><AiFillLinkedin /></a>
-                <a href="https://medium.com/@jenaidesibolie" className='hover:text-rose-500'><AiFillMediumSquare /></a>
-                <a href="https://github.com/Jenaide" className='hover:text-rose-500'><AiFillGithub /></a>
-                <a href="mailto:jenaidesibolie@gmail.com" className='hover:text-rose-500'><AiFillMail /></a>
+                <a href="https://www.linkedin.com/in/jenaide-sibolie-57a340158/" target='_blank' className='hover:text-rose-500'><AiFillLinkedin /></a>
+                <a href="https://medium.com/@jenaidesibolie" target='_blank' className='hover:text-rose-500'><AiFillMediumSquare /></a>
+                <a href="https://github.com/Jenaide" target='_blank' className='hover:text-rose-500'><AiFillGithub /></a>
+                <a href="mailto:jenaidesibolie@gmail.com" target='_blank' className='hover:text-rose-500'><AiFillMail /></a>
                 <a href=""></a>
               </div>
             </div>
