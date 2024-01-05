@@ -10,7 +10,7 @@ import { useForm } from '@formspree/react';
 
 import {AiFillLinkedin, AiFillGithub, AiFillMediumSquare, AiFillMail} from 'react-icons/ai';
 import { BiLogoBootstrap, BiLogoCss3, BiLogoGit, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
-import { SiCsharp, SiDotnet, SiExpress, SiFlask, SiMysql, SiPostman } from "react-icons/si";
+import { SiCsharp, SiDocker, SiDotnet, SiExpress, SiFlask, SiMysql, SiPostman } from "react-icons/si";
 import { TbBrandDjango } from "react-icons/tb";
 import { DiMsqlServer } from "react-icons/di";
 
@@ -24,13 +24,17 @@ const portfolioStyle = {
 }
 
 const scroll = {
-  scrollBehavior: 'smooth !important'
+  scrollBehavior: 'smooth',
 }
 
 
 export default function Home() {
 
   const [state, handleSubmit] = useForm('mrgzblg');
+
+  if (state.succeeded) {
+    return <p className='text-5xl text-rose-500 justify-center items-center flex py-50'>Successfully Submitted</p>
+  }
   
   return (
     <div>
@@ -40,10 +44,10 @@ export default function Home() {
                 <h1 className='text-xl font-dancing dark:text-white'>Jenaide Sibolie</h1>
                 <nav className='hidden lg:block md:block'>
                     <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4'>
-                        <li className='hover:text-rose-500'><a href='#about' style={scroll}>About</a></li>
-                        <li className='hover:text-rose-500'><a href='#about' style={scroll}>Skills</a></li>
-                        <li className='hover:text-rose-500'><a href='#about' style={scroll}>Portfolio</a></li>
-                        <li className='hover:text-rose-500'><a href='#about' style={scroll}>Contact</a></li>
+                        <li className='hover:text-rose-500'><a href='#about' style={{  }}>About</a></li>
+                        <li className='hover:text-rose-500'><a href='#skills' style={{  }}>Skills</a></li>
+                        <li className='hover:text-rose-500'><a href='#projects' style={{  }}>Portfolio</a></li>
+                        <li className='hover:text-rose-500'><a href='#contact' style={{  }}>Contact</a></li>
                     </ul>
                 </nav>
                 <ul className='flex items-center justify-end'>
@@ -132,9 +136,10 @@ export default function Home() {
             </div>
             <h2 className='text-3xl p-7 dark:text-gray-200'>Other <span className='text-rose-700'>Technolgies</span></h2>
             <div className='flex flex-wrap justify-evenly'>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoGit className="w-40 h-40 text-orange-600 md:w-40 lg:w-48 lg:h-48"/>Git</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoGit className="w-40 h-40 text-amber-600 md:w-40 lg:w-48 lg:h-48"/>Git</div>
               <div className='p-2 text-xl dark:text-gray-200'><BiLogoGithub className="w-40 h-40 text-gray-200 md:w-40 lg:w-48 lg:h-48"/>Github</div>
               <div className='p-2 text-xl dark:text-gray-200'><SiPostman className="w-40 h-40 text-orange-600 md:w-40 lg:w-48 lg:h-48"/>Postman</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiDocker className="w-40 h-40 text-blue-500 md:w-40 lg:w-48 lg:h-48"/>Docker</div>
             </div>
           </div>
         </div>
@@ -161,10 +166,9 @@ export default function Home() {
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
                 <Image src={Beyondblog} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
-                  width={'100%'}
-                  height={'100%'}
-                  style={portfolioStyle}
-                  title='checkout my code'
+                  
+                  style={portfolioStyle as React.CSSProperties}
+                  alt='checkout my code'
                 />
                 <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
                   <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>
@@ -177,10 +181,9 @@ export default function Home() {
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
                 <Image src={Beyondblog} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
-                  width={'100%'}
-                  height={'100%'}
-                  style={portfolioStyle}
-                  title='checkout my code'
+                 
+                  style={portfolioStyle as React.CSSProperties}
+                  alt='checkout my code'
                 />
                 <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
                   <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>
@@ -193,10 +196,9 @@ export default function Home() {
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
                 <Image src={Beyondblog} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
-                  width={'100%'}
-                  height={'100%'}
-                  style={portfolioStyle}
-                  title='checkout my code'
+                  
+                  style={portfolioStyle as React.CSSProperties}
+                  alt='checkout my code'
                 />
                 <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
                   <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>
@@ -209,10 +211,9 @@ export default function Home() {
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
                 <Image src={Beyondblog} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
-                  width={'100%'}
-                  height={'100%'}
-                  style={portfolioStyle}
-                  title='checkout my code'
+                  
+                  style={portfolioStyle as React.CSSProperties}
+                  alt='checkout my code'
                 />
                 <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
                   <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>
@@ -225,7 +226,7 @@ export default function Home() {
         </section>
 
         <section className='py-10' id='contact'>
-          <h1 className='text-5xl dark:text-gray-200 py-5'>Get In-Contact</h1>
+          <h1 className='text-5xl text-center dark:text-gray-200 py-5'>Get In-Contact</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor='name' className='dark:text-gray-200'>Name</label>
             <input type='text' id='name' className='border-2 border-rose-700 p-2 rounded-lg w-full dark:border-rose-700 dark:bg-black dark:text-gray-200' />
