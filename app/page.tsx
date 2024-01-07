@@ -209,7 +209,7 @@ export default function Home() {
               </a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
+              <a href='https://github.com/Jenaide/django-task-ninja' className='relative'>
                 <Image src={TaskNinja} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                  
@@ -224,7 +224,7 @@ export default function Home() {
               </a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href='https://github.com/Jenaide/django-task-ninja' className='relative'>
+              <a href='https://github.com/Jenaide/flask-fyyur-project' className='relative'>
                 <Image src={Fyuur} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                   
@@ -239,7 +239,7 @@ export default function Home() {
               </a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
+              <a href='https://github.com/Jenaide/Trivia_api' className='relative'>
                 <Image src={Trivia} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                   
