@@ -1,22 +1,24 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Typewriter from 'typewriter-effect';
 import { Analytics } from '@vercel/analytics/react';
-import { useState } from 'react';
 import { useForm } from '@formspree/react';
+import { Events, scrollSpy } from 'react-scroll';
 
 
 import {AiFillLinkedin, AiFillGithub, AiFillMediumSquare, AiFillMail} from 'react-icons/ai';
 import { BiLogoBootstrap, BiLogoCss3, BiLogoGit, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
 import { SiCsharp, SiDocker, SiDotnet, SiExpress, SiFlask, SiMysql, SiPostman } from "react-icons/si";
 import { TbBrandDjango } from "react-icons/tb";
-import { DiMsqlServer } from "react-icons/di";
 
 
-import Jenaide from '../public/Jenaide.jpg'
-import Beyondblog from '../public/beyondblog.png'
+import Jenaide from '../public/Jenaide.jpg';
+import Beyondblog from '../public/beyondblog.png';
+import Fyuur from '../public/Fyuur.png';
+import TaskNinja from '../public/task-ninja.png';
+import Trivia from '../public/trivia.png';
 
 const portfolioStyle = {
   layout: 'responsive',
@@ -31,6 +33,35 @@ const scroll = {
 export default function Home() {
 
   const [state, handleSubmit] = useForm('mrgzblg');
+  {/*const [fixedNavbar, setFixedNavbar] = useState('');
+
+  useEffect(() => {
+    Events.scrollEvent.register('begin', () => {});
+    Events.scrollEvent.register('end', () => {});
+
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const scrollOffset = window.scrollY;
+    if (scrollOffset > 100) {
+      setFixedNavbar('fixed top-0 w-full bg-white bg-opacity-90 backdrop-blur-lg shadow-md');
+    } else {
+      setFixedNavbar('');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.addEventListener('scroll', handleScroll);
+    }
+  }, []);*/}
 
   if (state.succeeded) {
     return <p className='text-5xl text-rose-500 justify-center items-center flex py-50'>Successfully Submitted</p>
@@ -40,7 +71,7 @@ export default function Home() {
     <div>
       <main className='bg-white px-10 md:px-10 lg:px-40 dark:bg-gray-950'>
         <section className='min-h-screen'>
-            <nav className='py-10 mb-12 flex justify-between dark:text-white'>
+            <nav className={`py-10 mb-12 flex justify-between dark:text-white`}>
                 <h1 className='text-xl font-dancing dark:text-white'>Jenaide Sibolie</h1>
                 <nav className='hidden lg:block md:block'>
                     <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4'>
@@ -161,7 +192,7 @@ export default function Home() {
               </p>
           </div>
 
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          <div className='flex flex-col gap-5 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
                 <Image src={Beyondblog} 
@@ -179,7 +210,7 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
-                <Image src={Beyondblog} 
+                <Image src={TaskNinja} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                  
                   style={portfolioStyle as React.CSSProperties}
@@ -193,8 +224,8 @@ export default function Home() {
               </a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
-                <Image src={Beyondblog} 
+              <a href='https://github.com/Jenaide/django-task-ninja' className='relative'>
+                <Image src={Fyuur} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                   
                   style={portfolioStyle as React.CSSProperties}
@@ -209,7 +240,7 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <a href='https://github.com/Jenaide/BeyondBlog_NodeJS' className='relative'>
-                <Image src={Beyondblog} 
+                <Image src={Trivia} 
                   className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300'
                   
                   style={portfolioStyle as React.CSSProperties}
